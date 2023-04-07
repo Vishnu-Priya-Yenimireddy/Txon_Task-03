@@ -1,0 +1,234 @@
+::-webkit-scrollbar {
+    display: none;
+  }
+  
+
+body {
+    background-color: rgba(237, 230, 9, 0) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    margin: auto;
+    font-family: 'Coming Soon', cursive;    
+    font-size: 18px;
+} 
+
+h1 {
+    font-family: 'Rampart One', cursive;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    color: #291a3a;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 5px;
+}
+
+i {
+    font-family: "Font Awesome 5 Free";
+    font-size: 0.8rem;
+  }
+
+button#clear-btn {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    margin-top: 15px;
+    font-size: 15px;
+    text-transform: uppercase;
+    background-color: #96351E;
+    border: 0;
+    border-radius: 3px;
+    padding: 8px;
+    color: rgb(255, 253, 208);
+    cursor:pointer;
+}
+
+button#clear-btn:hover {
+    color: rgb(255, 253, 208);
+}
+
+.btn.focus,
+.btn:focus{
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 0%);
+}
+
+button:focus {
+    outline: 0;
+}
+
+.container {
+    margin: auto;
+    width: 70%;
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: #96351E 0px 20px 30px -10px;   
+    background-color:rgb(255, 253, 208);
+    margin-bottom: 20px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.row {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    width: 76%;
+    margin-right: 5px;
+}
+
+.btn-plus {
+    width: 15%;
+}
+
+.btn-add {
+    background-color: #96351E;
+    border: 0;
+    border-radius: 3px;
+    padding: 4px;
+    color: white;
+    cursor:pointer;
+}
+
+.task-text {
+    margin-left: 5px;
+}
+
+.taskDone {
+  text-decoration: line-through;
+  color: #96351E;
+  font-style: italic;
+  opacity: 0.3;
+}
+
+.btn-done {
+    background-color: #96351E;
+    color: white;
+    border: 0;
+}
+
+.btnIsDone,
+.btn-edit,
+.btn-delete {
+    background-color: #96351E;
+    color: white;
+    border: 0;
+}
+
+.btn-add:hover,
+.btn-done:hover,
+.btn-edit:hover,
+.btn-delete:hover {
+    color: white;
+}
+
+.list-group-item {
+    padding: 0.3rem 0.3rem;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    color: #96351E;
+    margin-top: 20px;
+}
+
+a {
+    color:#96351E;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #96351E;
+    text-decoration: none;
+}
+
+.form-control:focus {
+    background-color: #96351E;
+    border-color: #96351E;
+    outline: 0;
+    box-shadow: 0 0 0 0.1rem #4b356482;
+}
+
+.form-control::placeholder {
+    opacity: 0.5;
+}
+
+button.swal2-confirm.swal2-styled {
+    background-color: #96351E;
+    width: 115px;
+    border: 0;
+}
+
+.swal2-styled.swal2-confirm:focus {
+    box-shadow: 0 0 0 2px #96351E;
+}
+
+.swal2-popup.swal2-modal.swal2-show  {
+    color: #150668;
+    width: 60%;
+}
+
+.swal2-input:focus, .swal2-file:focus, .swal2-textarea:focus {
+    outline: 0;
+    box-shadow: 0 0 0 2px #96351E !important;
+}
+
+.swal2-title {
+    max-width: 100%;
+}
+
+
+@media only screen and (max-width: 870px) and (min-height: 300px) {
+    .container {
+       width: 95%; 
+       margin: auto;
+    }
+
+    body {
+        font-size: 14px;
+        margin-top: 3.5em;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .btn-add {
+        padding: 7px;
+    }
+
+    button#clear-btn {
+        font-size: 12px;
+    }
+
+    .swal2-popup.swal2-modal.swal2-show {
+        color: #291a3a;
+        width: 70%;
+        font-size: 10px;
+    }
+
+}
